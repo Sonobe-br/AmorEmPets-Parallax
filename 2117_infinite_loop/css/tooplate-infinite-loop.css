@@ -276,11 +276,11 @@ blockquote {
   position: relative;
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   #testimonials {
     background-image: url(../img/krista-mangulsone-9gz3wfHr65U-unsplash\ 1.png);
   }
-}
+} */
 
 .tm-testimonials-content {
   position: relative;
