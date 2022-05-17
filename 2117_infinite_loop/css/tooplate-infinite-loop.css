@@ -75,6 +75,13 @@ blockquote {
   background-color: #bf2728;
 }
 
+.logo {
+
+  position: relative;
+  left: -90px;
+
+}
+
 /* Navbar */
 
 .tm-navbar {
