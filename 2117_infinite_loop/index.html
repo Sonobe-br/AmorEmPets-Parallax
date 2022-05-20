@@ -259,45 +259,47 @@
               </div>
 
               <div class="col-sm-12 col-md-6">
-                <form action="" method="get">
-                  <input id="name" name="name" type="text" placeholder="Seu Nome" class="tm-input" required />
-                  <input id="email" name="email" type="email" placeholder="Seu Email" class="tm-input" required />
-                  <textarea id="message" name="message" rows="8" placeholder="Mensagem" class="tm-input" required></textarea>
-                  <button type="submit" class="btn tm-btn-submit">Enviar</button>
+
+                <form action="" method="Post">
+                  
+                  <input id="idName" name="nome" type="text" placeholder="Nome Completo" class="tm-input" required />
+                  <input id="idEmail" name="email" type="email" placeholder="Seu melhor email" class="tm-input" required />
+                  <textarea id="idMessage" name="message" rows="8" placeholder="Mensagem" class="tm-input" required></textarea>
+                  <input type="submit" id="idMessage"name="submit" class="btn tm-btn-submit" onclick="Enviar()" value="Enviar">
+                  
+                  <!-- <button type="submit" class="btn tm-btn-submit">Enviar</button> -->
+
                 </form>
+
               </div>
 
               <div class="col-sm-12 col-md-6">
 
-                  <div class="contact-item">
-                    <a rel="nofollow" href="https://www.tooplate.com/contact" class="item-link">
-                        <i class="far fa-2x fa-comment mr-4"></i>
-                        <span class="mb-0">Chat Online</span>
-                    </a>              
-                  </div>
-
-                  <div class="contact-item">
-                    <a rel="nofollow" href="mailto:mail@company.com" class="item-link">
-                        <i class="far fa-2x fa-envelope mr-4"></i>
-                        <span class="mb-0">ud@indbandeirante.com.br</span>
-                    </a>              
-                  </div>
-
-                  <div class="contact-item">
-                    <a rel="nofollow" href="https://www.google.com/maps" class="item-link">
-                        <i class="fas fa-2x fa-map-marker-alt mr-4"></i>
-                        <span class="mb-0">Rua Marinaro, 240 Guarulhos/SP</span>
-                    </a>              
-                  </div>
-
-                  <div class="contact-item">
-                    <a rel="nofollow" href="tel:0100200340" class="item-link">
-                        <i class="fas fa-2x fa-phone-square mr-4"></i>
-                        <span class="mb-0">+55 11 98745-5699</span>
-                    </a>              
-                  </div>
-
-                  <div class="contact-item">&nbsp;</div>
+                <div class="contact-item">
+                  <a rel="nofollow" href="https://indbandeirante.com/contato/" class="item-link">
+                      <i class="far fa-2x fa-comment mr-4"></i>
+                      <span class="mb-0">Chat Online</span>
+                  </a>              
+                </div>
+                <div class="contact-item">
+                  <a rel="nofollow" href="mailto:daniel.silveira@indbandeirante.com.br" class="item-link">
+                      <i class="far fa-2x fa-envelope mr-4"></i>
+                      <span class="mb-0">ud@indbandeirante.com.br</span>
+                  </a>              
+                </div>
+                <div class="contact-item">
+                  <a rel="nofollow" href="https://www.google.com/maps" class="item-link">
+                      <i class="fas fa-2x fa-map-marker-alt mr-4"></i>
+                      <span class="mb-0">Rua Marinaro, 240 Guarulhos/SP</span>
+                  </a>              
+                </div>
+                <div class="contact-item">
+                  <a rel="nofollow" href="tel:11949697778" class="item-link">
+                      <i class="fas fa-2x fa-phone-square mr-4"></i>
+                      <span class="mb-0">+55 11 98745-5699</span>
+                  </a>              
+                </div>
+                <div class="contact-item">&nbsp;</div>
                 
               </div>
 
@@ -320,31 +322,36 @@
       <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
       <script src="js/easing.min.js"></script>
       <script src="js/jquery.singlePageNav.min.js"></script>     
-      <script src="js/bootstrap.min.js"></script> 
-      <script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/contato.js"></script> 
 
-        function getOffSet(){
+      <script>
+        function getOffSet() {
           var _offset = 450;
           var windowHeight = window.innerHeight;
 
           if(windowHeight > 500) {
             _offset = 400;
           } 
+
           if(windowHeight > 680) {
             _offset = 300
           }
+
           if(windowHeight > 830) {
             _offset = 210;
           }
 
           return _offset;
+
         }
 
-        function setParallaxPosition($doc, multiplier, $object){
+        function setParallaxPosition($doc, multiplier, $object) {
           var offset = getOffSet();
           var from_top = $doc.scrollTop(),
             bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
           $object.css({"background-position" : bg_css });
+          
         }
 
         // Parallax function
