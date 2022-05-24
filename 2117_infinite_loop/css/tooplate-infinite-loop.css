@@ -520,6 +520,7 @@ figure.effect-honey:hover h2 i {
 /* Contact */
 
 #contact {
+
   color: white;
   background-color: #001828;
   background-image: url(../img/krista-mangulsone-9gz3wfHr65U-unsplash\ 1.png);
@@ -527,7 +528,7 @@ figure.effect-honey:hover h2 i {
   background-repeat: no-repeat;
   min-height: 980px;
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   padding-top: 100px;
 }
 
