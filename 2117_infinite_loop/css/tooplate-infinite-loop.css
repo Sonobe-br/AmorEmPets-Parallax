@@ -16,6 +16,7 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+
 a {
   transition: all 0.3s ease;
   color:#bf2728;
@@ -40,7 +41,7 @@ a:focus {
 }
 
 blockquote {
-  font-size: 0.86em;
+  font-size: 0.90em;
   line-height: 1.8em;
 }
 
@@ -76,10 +77,8 @@ blockquote {
 }
 
 .logo {
-
   position: relative;
   left: -90px;
-
 }
 
 /* Navbar */
@@ -283,11 +282,11 @@ blockquote {
   position: relative;
 }
 
-/* @media (max-width: 991px) {
+@media (max-width: 991px) {
   #testimonials {
     background-image: url(../img/krista-mangulsone-9gz3wfHr65U-unsplash\ 1.png);
   }
-} */
+}
 
 .tm-testimonials-content {
   position: relative;
